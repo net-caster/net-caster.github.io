@@ -1,14 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette");
 body {
-  background: #29567e;
+  height: 100vh;
+  background: linear-gradient(#29567e, #213444);
+}
+
+.title {
+  font-family: "Courgette", cursive;
+  color: white;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .uc-img {
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.project-thumbs {
+  display: flex;
+  margin-top: 15%;
+  width: 900px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-thumbs a {
+  position: relative;
+  margin: 20px;
+}
+
+.image-box {
+  background: url("../../images/reg_thumb.jpg") center no-repeat;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #6ca2c7;
+  border-radius: 10px;
+  background-size: 100%;
+  transition: background-size ease 0.3s;
+}
+
+.image-box:hover {
+  background-size: 110%;
 }
 
 /*# sourceMappingURL=main.css.map */

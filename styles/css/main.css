@@ -1,0 +1,14 @@
+body {
+  background: #223749;
+}
+
+.uc-img {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=main.css.map */

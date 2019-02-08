@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Courgette");
 body {
   height: 100vh;
-  background: linear-gradient(#29567e, #213444);
+  background: linear-gradient(#609cd4, #224361);
 }
 
 .title {
@@ -9,6 +9,7 @@ body {
   color: white;
   text-align: center;
   margin-top: 2em;
+  text-shadow: #000 1px 5px 10px;
 }
 
 .container {
@@ -47,6 +48,7 @@ body {
   border-radius: 10px;
   background-size: 100%;
   transition: background-size ease 0.3s;
+  box-shadow: #000 1px 5px 10px;
 }
 
 .image-box:hover {

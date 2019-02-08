@@ -20,25 +20,24 @@ body {
 }
 
 .uc-img {
+    background: url('../../images/under_construction.png') center no-repeat;
     height: 200px;
     width: 200px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    background-size: 100%;
 }
 
 .project-thumbs {
     display: flex;
+    position: absolute;
     margin-top: 15%;
     width: 900px;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.project-thumbs a {
-    position: relative;
-    margin: 20px;
+    & a {
+        position: relative;
+        margin: 20px;
+    }
 }
 
 .image-box {
@@ -50,8 +49,23 @@ body {
     background-size: 100%;
     transition: background-size ease 0.3s;
     box-shadow: #000 1px 5px 10px;
+    &:hover {
+        background-size: 110%;
+        border-color: white;
+    }
 }
 
-.image-box:hover {
-    background-size: 110%;
+@media only screen and (max-width: 1100px) {
+    .project-thumbs {
+        flex-direction: column;
+        align-content: center;
+        margin: 0;
+    }
+    .uc-img {
+        display: none;
+    }
+    .image-box {
+        width: 500px;
+        height: 500px;
+    }
 }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Courgette");
 body {
   height: 100vh;
-  background: linear-gradient(#609cd4, #224361);
+  background: linear-gradient(#609cd4, #224361) center;
 }
 
 .title {
@@ -32,11 +32,19 @@ body {
   margin-top: 15%;
   width: 900px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.project-thumbs a {
+.project-thumbs .thumb {
   position: relative;
-  margin: 20px;
+}
+.project-thumbs .thumb-text {
+  position: relative;
+  font-family: "Courgette", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  text-shadow: #000 1px 5px 10px;
 }
 
 .image-box {
@@ -55,6 +63,10 @@ body {
 }
 
 @media only screen and (max-width: 1100px) {
+  body {
+    height: 1200px;
+  }
+
   .project-thumbs {
     flex-direction: column;
     align-content: center;
@@ -66,8 +78,8 @@ body {
   }
 
   .image-box {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
 }
 

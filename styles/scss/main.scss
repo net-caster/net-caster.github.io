@@ -36,6 +36,18 @@ body {
     justify-content: space-evenly;
     & .thumb {
         position: relative;
+        & #login {
+            background: url("../../images/reg_thumb.jpg") center no-repeat;
+            background-size: 100%;
+        }
+        & #weather {
+            background: url("../../images/weather_thumb.jpg") center no-repeat;
+            background-size: 100%;
+        }
+        & #weather:hover,
+        #login:hover {
+            background-size: 110%;
+        }
     }
     & .thumb-text {
         position: relative;
@@ -49,12 +61,10 @@ body {
 }
 
 .image-box {
-    background: url("../../images/reg_thumb.jpg") center no-repeat;
     height: 250px;
     width: 250px;
     border: 2px solid rgb(108, 162, 199);
     border-radius: 10px;
-    background-size: 100%;
     transition: background-size ease 0.3s;
     box-shadow: #000 1px 5px 10px;
     &:hover {
@@ -78,5 +88,11 @@ body {
     .image-box {
         width: 400px;
         height: 400px;
+    }
+}
+
+@media only screen and (min-height: 1200px) {
+    body {
+        height: 100vh;
     }
 }

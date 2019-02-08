@@ -37,6 +37,18 @@ body {
 .project-thumbs .thumb {
   position: relative;
 }
+.project-thumbs .thumb #login {
+  background: url("../../images/reg_thumb.jpg") center no-repeat;
+  background-size: 100%;
+}
+.project-thumbs .thumb #weather {
+  background: url("../../images/weather_thumb.jpg") center no-repeat;
+  background-size: 100%;
+}
+.project-thumbs .thumb #weather:hover,
+.project-thumbs .thumb #login:hover {
+  background-size: 110%;
+}
 .project-thumbs .thumb-text {
   position: relative;
   font-family: "Courgette", cursive;
@@ -48,12 +60,10 @@ body {
 }
 
 .image-box {
-  background: url("../../images/reg_thumb.jpg") center no-repeat;
   height: 250px;
   width: 250px;
   border: 2px solid #6ca2c7;
   border-radius: 10px;
-  background-size: 100%;
   transition: background-size ease 0.3s;
   box-shadow: #000 1px 5px 10px;
 }
@@ -80,6 +90,11 @@ body {
   .image-box {
     width: 400px;
     height: 400px;
+  }
+}
+@media only screen and (min-height: 1200px) {
+  body {
+    height: 100vh;
   }
 }
 

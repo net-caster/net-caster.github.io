@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Courgette");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script");
 body {
   height: 100vh;
-  background: linear-gradient(#609cd4, #224361) center;
+  background: linear-gradient(#4479aa, #111f2b) center;
 }
 
 .title {
   font-family: "Courgette", cursive;
   color: white;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1em;
   text-shadow: #000 1px 5px 10px;
 }
 
@@ -20,8 +21,8 @@ body {
 
 .uc-img {
   background: url("../../images/under_construction.png") center no-repeat;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   position: relative;
   background-size: 100%;
 }
@@ -29,13 +30,18 @@ body {
 .project-thumbs {
   display: flex;
   position: absolute;
-  margin-top: 15%;
+  margin-top: 8em;
   width: 900px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .project-thumbs .thumb {
+  display: flex;
+  width: 300px;
   position: relative;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
 }
 .project-thumbs .thumb #login {
   background: url("../../images/reg_thumb.jpg") center no-repeat;
@@ -49,7 +55,7 @@ body {
 .project-thumbs .thumb #login:hover {
   background-size: 110%;
 }
-.project-thumbs .thumb-text {
+.project-thumbs .thumb .thumb-title {
   position: relative;
   font-family: "Courgette", cursive;
   font-size: 1.5rem;
@@ -57,6 +63,14 @@ body {
   color: white;
   font-weight: 600;
   text-shadow: #000 1px 5px 10px;
+}
+.project-thumbs .thumb .thumb-description {
+  color: white;
+  text-align: center;
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-shadow: #000 1px 5px 3px;
 }
 
 .image-box {
@@ -74,7 +88,7 @@ body {
 
 @media only screen and (max-width: 1100px) {
   body {
-    height: 1200px;
+    height: 1400px;
   }
 
   .project-thumbs {

@@ -20,7 +20,7 @@ header {
     color: white;
     text-align: center;
     margin-top: 2em;
-    text-shadow: #000 1px 5px 10px;
+    // text-shadow: #000 1px 5px 10px;
 }
 
 .container {
@@ -73,7 +73,7 @@ header {
             text-align: center;
             color: white;
             font-weight: 600;
-            text-shadow: #000 1px 5px 10px;
+            // text-shadow: #000 1px 5px 10px;
         }
         & .thumb-description {
             color: white;
@@ -81,7 +81,7 @@ header {
             font-family: 'Bad Script', cursive;
             font-weight: bold;
             font-size: 1.2rem;
-            text-shadow: #000 1px 5px 3px;
+            // text-shadow: #000 1px 5px 3px;
         }
     }
 }
@@ -89,8 +89,8 @@ header {
 .image-box {
     height: 250px;
     width: 250px;
-    border: 2px solid rgb(108, 162, 199);
-    border-radius: 10px;
+    border: 2px solid rgb(70, 160, 219);
+    border-radius: 5px;
     transition: background-size ease 0.3s;
     box-shadow: #000 1px 5px 10px;
     &:hover {

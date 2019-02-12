@@ -92,7 +92,7 @@ header {
     border: 2px solid rgb(70, 160, 219);
     border-radius: 5px;
     transition: background-size ease 0.3s;
-    box-shadow: #000 1px 5px 10px;
+    // box-shadow: #000 1px 5px 10px;
     &:hover {
         background-size: 110%;
         border-color: white;

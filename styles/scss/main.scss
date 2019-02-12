@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette');
 @import url('https://fonts.googleapis.com/css?family=Bad+Script');
 body {
-    height: 100vh;
-    background: linear-gradient(rgb(68, 121, 170), rgb(17, 31, 43)) center;
+    // height: 100vh;
+    // background: linear-gradient(rgb(68, 121, 170), rgb(17, 31, 43)) center;
+    background: rgb(10, 10, 10);
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: inline-flex;
+    // margin-left: 20%;
+    height: 300px;
+    position: absolute;
 }
 
 .title {
     font-family: 'Courgette', cursive;
     color: white;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 2em;
     text-shadow: #000 1px 5px 10px;
 }
 
@@ -17,20 +27,23 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: absolute;
+    margin-top: 5em;
 }
 
 .uc-img {
-    background: url('../../images/under_construction.png') center no-repeat;
-    height: 150px;
-    width: 150px;
+    background: url('/images/under_construction.png') center no-repeat;
+    height: 100px;
+    width: 100px;
     position: relative;
     background-size: 100%;
+    margin: 40px 40px 0 40px;
 }
 
 .project-thumbs {
     display: flex;
-    position: absolute;
-    margin-top: 8em;
+    position: relative;
+    margin-top: 10em;
     width: 900px;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -42,11 +55,11 @@ body {
         align-items: center;
         flex-direction: column;
         & #login {
-            background: url("../../images/reg_thumb.jpg") center no-repeat;
+            background: url("/images/project_thumbs/reg_thumb.jpg") center no-repeat;
             background-size: 100%;
         }
         & #weather {
-            background: url("../../images/weather_thumb.jpg") center no-repeat;
+            background: url("/images/project_thumbs/weather_thumb.jpg") center no-repeat;
             background-size: 100%;
         }
         & #weather:hover,
@@ -93,7 +106,6 @@ body {
     .project-thumbs {
         flex-direction: column;
         align-content: center;
-        margin: 0;
     }
     .uc-img {
         display: none;
@@ -101,11 +113,5 @@ body {
     .image-box {
         width: 400px;
         height: 400px;
-    }
-}
-
-@media only screen and (min-height: 1200px) {
-    body {
-        height: 100vh;
     }
 }

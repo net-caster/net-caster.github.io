@@ -8,13 +8,6 @@ body {
     justify-content: center;
 }
 
-header {
-    display: inline-flex;
-    // margin-left: 20%;
-    height: 300px;
-    position: absolute;
-}
-
 .title {
     font-family: 'Courgette', cursive;
     color: white;
@@ -28,90 +21,14 @@ header {
     justify-content: center;
     width: 100%;
     position: absolute;
-    margin-top: 5em;
+    top: 20%;
 }
 
 .uc-img {
     background: url('/images/under_construction.png') center no-repeat;
-    height: 100px;
-    width: 100px;
-    position: relative;
+    height: 200px;
+    width: 200px;
+    position: absolute;
     background-size: 100%;
-    margin: 40px 40px 0 40px;
-}
-
-.project-thumbs {
-    display: flex;
-    position: relative;
-    margin-top: 10em;
-    width: 900px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    & .thumb {
-        display: flex;
-        width: 300px;
-        position: relative;
-        justify-items: center;
-        align-items: center;
-        flex-direction: column;
-        & #login {
-            background: url("/images/project_thumbs/reg_thumb.jpg") center no-repeat;
-            background-size: 100%;
-        }
-        & #weather {
-            background: url("/images/project_thumbs/weather_thumb.jpg") center no-repeat;
-            background-size: 100%;
-        }
-        & #weather:hover,
-        #login:hover {
-            background-size: 110%;
-        }
-        & .thumb-title {
-            position: relative;
-            font-family: 'Courgette', cursive;
-            font-size: 1.5rem;
-            text-align: center;
-            color: white;
-            font-weight: 600;
-            // text-shadow: #000 1px 5px 10px;
-        }
-        & .thumb-description {
-            color: white;
-            text-align: center;
-            font-family: 'Bad Script', cursive;
-            font-weight: bold;
-            font-size: 1.2rem;
-            // text-shadow: #000 1px 5px 3px;
-        }
-    }
-}
-
-.image-box {
-    height: 250px;
-    width: 250px;
-    border: 2px solid rgb(70, 160, 219);
-    border-radius: 5px;
-    transition: background-size ease 0.3s;
-    // box-shadow: #000 1px 5px 10px;
-    &:hover {
-        background-size: 110%;
-        border-color: white;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    body {
-        height: 1400px;
-    }
-    .project-thumbs {
-        flex-direction: column;
-        align-content: center;
-    }
-    .uc-img {
-        display: none;
-    }
-    .image-box {
-        width: 400px;
-        height: 400px;
-    }
+    top: 100%;
 }

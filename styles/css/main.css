@@ -435,24 +435,24 @@ body {
     flex-wrap: wrap;
   }
   .projects-container .thumbnail-container {
-    width: 400px;
-    height: 100%;
+    width: 500px;
+    height: 250px;
   }
   .projects-container .thumbnail-container .img {
-    top: -1.75em;
-    width: 400px;
+    top: -0.8em;
+    width: 500px;
   }
   .projects-container .thumbnail-container:hover {
     transform: none;
   }
   .projects-container .thumbnail-container .github-btn {
     right: 1em;
-    top: -1em;
+    top: 0.75em;
     opacity: 1;
   }
   .projects-container .thumbnail-container .project-btn {
     left: 1em;
-    top: 1em;
+    top: 1.5em;
   }
   .projects-container .thumbnail-container .project-btn a {
     background-color: #222;
@@ -460,8 +460,8 @@ body {
   }
   .projects-container .thumbnail-container .project-title {
     text-align: center;
-    top: -3em;
-    left: -4.5em;
+    top: -1.5em;
+    left: -1em;
   }
 
   .banner-parallax,

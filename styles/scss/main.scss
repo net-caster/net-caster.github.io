@@ -432,23 +432,23 @@ nav {
     .projects-container {
         flex-wrap: wrap;
         & .thumbnail-container {
-            width: 400px;
-            height: 100%;
+            width: 500px;
+            height: 250px;
             & .img {
-                top: -1.75em;
-                width: 400px;
+                top: -0.8em;
+                width: 500px;
             }
             &:hover {
                 transform: none;
             }
             & .github-btn {
                 right: 1em;
-                top: -1em;
+                top: 0.75em;
                 opacity: 1;
             }
             & .project-btn {
                 left: 1em;
-                top: 1em;
+                top: 1.5em;
                 & a {
                     background-color: #222;
                     color: cornsilk;
@@ -456,8 +456,8 @@ nav {
             }
             & .project-title {
                 text-align: center;
-                top: -3em;
-                left: -4.5em;
+                top: -1.5em;
+                left: -1em;
             }
         }
     }

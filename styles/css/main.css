@@ -422,6 +422,7 @@ nav #contact-btn:active {
 }
 @media (max-height: 480px) {
   .projects-container {
+    width: 100%;
     flex-wrap: wrap;
   }
 
@@ -456,6 +457,19 @@ nav #contact-btn:active {
   .banner-title .tag {
     text-align: center;
     right: 10%;
+  }
+
+  .contact-parallax {
+    min-height: 50%;
+  }
+
+  .contact-section {
+    font-size: 1em;
+    top: 4em;
+  }
+  .contact-section .contact-title {
+    left: 10%;
+    width: 80%;
   }
 }
 

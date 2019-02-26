@@ -422,6 +422,7 @@ nav {
 
 @media (max-height: 480px) {
     .projects-container {
+        width: 100%;
         flex-wrap: wrap;
     }
     nav {
@@ -453,6 +454,17 @@ nav {
         & .tag {
             text-align: center;
             right: 10%;
+        }
+    }
+    .contact-parallax {
+        min-height: 50%;
+    }
+    .contact-section {
+        font-size: 1em;
+        top: 4em;
+        & .contact-title {
+            left: 10%;
+            width: 80%;
         }
     }
 }

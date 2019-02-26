@@ -420,5 +420,43 @@ nav #contact-btn:active {
     display: none;
   }
 }
+@media (max-height: 480px) {
+  .projects-container {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .banner-parallax,
+.skills-parallax,
+.projects-parallax,
+.contact-parallax {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    z-index: -1;
+  }
+
+  .name-tag {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .name-tag .name {
+    width: 70%;
+    left: 5%;
+  }
+
+  .banner-title {
+    font-size: 2em;
+  }
+  .banner-title .tag {
+    text-align: center;
+    right: 10%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

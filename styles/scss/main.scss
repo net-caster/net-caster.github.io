@@ -363,7 +363,6 @@ nav {
     .projects-container {
         flex-wrap: wrap;
         & .thumbnail-container {
-            // text-align: center;
             width: 400px;
             height: 100%;
             & .img {
@@ -417,6 +416,41 @@ nav {
     .footer {
         & .credits {
             display: none;
+        }
+    }
+}
+
+@media (max-height: 480px) {
+    .projects-container {
+        flex-wrap: wrap;
+    }
+    nav {
+        display: none;
+    }
+    .banner-parallax,
+    .skills-parallax,
+    .projects-parallax,
+    .contact-parallax {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        z-index: -1;
+    }
+    .name-tag {
+        font-size: 2.5em;
+        text-align: center;
+        & .name {
+            width: 70%;
+            left: 5%;
+        }
+    }
+    .banner-title {
+        font-size: 2em;
+        & .tag {
+            text-align: center;
+            right: 10%;
         }
     }
 }

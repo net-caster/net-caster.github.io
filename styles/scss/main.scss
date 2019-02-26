@@ -297,7 +297,7 @@ nav {
     }
 }
 
-.contact-title {
+.contact-section {
     text-align: center;
     position: absolute;
     padding: 10px 0;
@@ -310,6 +310,9 @@ nav {
     top: 40%;
     text-shadow: 0 5px 5px #000;
     background: rgba(0, 0, 0, 0.8);
+    & .contact-title {
+        position: relative;
+    }
     & span {
         color: #e4f7ff;
         text-transform: lowercase;
@@ -343,15 +346,18 @@ nav {
         display: none;
     }
     .name-tag {
+        font-size: 2.5em;
         text-align: center;
         & .name {
-            left: -1.5em;
+            width: 70%;
+            left: 20%;
         }
     }
     .banner-title {
+        font-size: 2em;
         & .tag {
             text-align: center;
-            right: 0.5em;
+            right: 20%;
         }
     }
     .projects-container {
@@ -400,6 +406,13 @@ nav {
         background-repeat: no-repeat;
         background-attachment: scroll;
         z-index: -1;
+    }
+    .contact-section {
+        font-size: 1em;
+        & .contact-title {
+            left: 15%;
+            width: 70%;
+        }
     }
     .footer {
         & .credits {

@@ -293,7 +293,7 @@ nav #contact-btn:active {
   opacity: 1;
 }
 
-.contact-title {
+.contact-section {
   text-align: center;
   position: absolute;
   padding: 10px 0;
@@ -307,7 +307,10 @@ nav #contact-btn:active {
   text-shadow: 0 5px 5px #000;
   background: rgba(0, 0, 0, 0.8);
 }
-.contact-title span {
+.contact-section .contact-title {
+  position: relative;
+}
+.contact-section span {
   color: #e4f7ff;
   text-transform: lowercase;
 }
@@ -340,15 +343,20 @@ nav #contact-btn:active {
   }
 
   .name-tag {
+    font-size: 2.5em;
     text-align: center;
   }
   .name-tag .name {
-    left: -1.5em;
+    width: 70%;
+    left: 20%;
   }
 
+  .banner-title {
+    font-size: 2em;
+  }
   .banner-title .tag {
     text-align: center;
-    right: 0.5em;
+    right: 20%;
   }
 
   .projects-container {
@@ -398,6 +406,14 @@ nav #contact-btn:active {
     background-repeat: no-repeat;
     background-attachment: scroll;
     z-index: -1;
+  }
+
+  .contact-section {
+    font-size: 1em;
+  }
+  .contact-section .contact-title {
+    left: 15%;
+    width: 70%;
   }
 
   .footer .credits {

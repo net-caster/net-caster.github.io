@@ -116,7 +116,7 @@ nav #contact-btn:active {
 
 .name-tag {
   position: absolute;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   top: 1.4em;
   width: 100%;
@@ -128,7 +128,8 @@ nav #contact-btn:active {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .name-tag .name {
-  transform: translate(0.5em, 0);
+  position: relative;
+  left: 1em;
   width: 700px;
   padding: 10px 0;
 }
@@ -141,13 +142,14 @@ nav #contact-btn:active {
   color: #e0d2c0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
+  text-align: right;
 }
 .banner-title .tag {
+  display: inline-block;
   position: relative;
   text-transform: uppercase;
   text-shadow: 0 5px 5px #000;
   right: 2em;
-  float: right;
   padding: 10px 0;
 }
 
@@ -332,23 +334,54 @@ nav #contact-btn:active {
   color: cornsilk;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
   nav {
     display: none;
+  }
+
+  .name-tag {
+    text-align: center;
+  }
+  .name-tag .name {
+    left: -1.5em;
+  }
+
+  .banner-title .tag {
+    text-align: center;
+    right: 0.5em;
   }
 
   .projects-container {
     flex-wrap: wrap;
   }
+  .projects-container .thumbnail-container {
+    width: 400px;
+    height: 100%;
+  }
+  .projects-container .thumbnail-container .img {
+    top: -1.75em;
+    width: 400px;
+  }
   .projects-container .thumbnail-container:hover {
     transform: none;
   }
   .projects-container .thumbnail-container .github-btn {
+    right: 1em;
+    top: -1em;
     opacity: 1;
+  }
+  .projects-container .thumbnail-container .project-btn {
+    left: 1em;
+    top: 1em;
   }
   .projects-container .thumbnail-container .project-btn a {
     background-color: #222;
     color: cornsilk;
+  }
+  .projects-container .thumbnail-container .project-title {
+    text-align: center;
+    top: -3em;
+    left: -4.5em;
   }
 
   .section {
@@ -365,6 +398,10 @@ nav #contact-btn:active {
     background-repeat: no-repeat;
     background-attachment: scroll;
     z-index: -1;
+  }
+
+  .footer .credits {
+    display: none;
   }
 }
 

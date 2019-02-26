@@ -120,7 +120,7 @@ nav {
 
 .name-tag {
     position: absolute;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     top: 1.4em;
     width: 100%;
@@ -131,7 +131,8 @@ nav {
     text-shadow: 0 5px 5px #000;
     background-color: rgba(0, 0, 0, 0.5);
     & .name {
-        transform: translate(0.5em, 0);
+        position: relative;
+        left: 1em;
         width: 700px;
         padding: 10px 0;
     }
@@ -145,12 +146,13 @@ nav {
     color: #e0d2c0;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
+    text-align: right;
     & .tag {
+        display: inline-block;
         position: relative;
         text-transform: uppercase;
         text-shadow: 0 5px 5px #000;
         right: 2em;
-        float: right;
         padding: 10px 0;
     }
 }
@@ -336,24 +338,52 @@ nav {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
     nav {
         display: none;
+    }
+    .name-tag {
+        text-align: center;
+        & .name {
+            left: -1.5em;
+        }
+    }
+    .banner-title {
+        & .tag {
+            text-align: center;
+            right: 0.5em;
+        }
     }
     .projects-container {
         flex-wrap: wrap;
         & .thumbnail-container {
+            // text-align: center;
+            width: 400px;
+            height: 100%;
+            & .img {
+                top: -1.75em;
+                width: 400px;
+            }
             &:hover {
                 transform: none;
             }
             & .github-btn {
+                right: 1em;
+                top: -1em;
                 opacity: 1;
             }
             & .project-btn {
+                left: 1em;
+                top: 1em;
                 & a {
                     background-color: #222;
                     color: cornsilk;
                 }
+            }
+            & .project-title {
+                text-align: center;
+                top: -3em;
+                left: -4.5em;
             }
         }
     }
@@ -370,5 +400,10 @@ nav {
         background-repeat: no-repeat;
         background-attachment: scroll;
         z-index: -1;
+    }
+    .footer {
+        & .credits {
+            display: none;
+        }
     }
 }

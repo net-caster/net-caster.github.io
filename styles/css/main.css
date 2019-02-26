@@ -432,11 +432,36 @@ body {
   }
 
   .projects-container {
-    width: 100%;
     flex-wrap: wrap;
   }
-  .projects-container .img {
+  .projects-container .thumbnail-container {
     width: 400px;
+    height: 100%;
+  }
+  .projects-container .thumbnail-container .img {
+    top: -1.75em;
+    width: 400px;
+  }
+  .projects-container .thumbnail-container:hover {
+    transform: none;
+  }
+  .projects-container .thumbnail-container .github-btn {
+    right: 1em;
+    top: -1em;
+    opacity: 1;
+  }
+  .projects-container .thumbnail-container .project-btn {
+    left: 1em;
+    top: 1em;
+  }
+  .projects-container .thumbnail-container .project-btn a {
+    background-color: #222;
+    color: cornsilk;
+  }
+  .projects-container .thumbnail-container .project-title {
+    text-align: center;
+    top: -3em;
+    left: -4.5em;
   }
 
   .banner-parallax,

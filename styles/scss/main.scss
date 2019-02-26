@@ -430,10 +430,35 @@ nav {
         display: none;
     }
     .projects-container {
-        width: 100%;
         flex-wrap: wrap;
-        & .img {
+        & .thumbnail-container {
             width: 400px;
+            height: 100%;
+            & .img {
+                top: -1.75em;
+                width: 400px;
+            }
+            &:hover {
+                transform: none;
+            }
+            & .github-btn {
+                right: 1em;
+                top: -1em;
+                opacity: 1;
+            }
+            & .project-btn {
+                left: 1em;
+                top: 1em;
+                & a {
+                    background-color: #222;
+                    color: cornsilk;
+                }
+            }
+            & .project-title {
+                text-align: center;
+                top: -3em;
+                left: -4.5em;
+            }
         }
     }
     .banner-parallax,

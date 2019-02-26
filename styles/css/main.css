@@ -421,13 +421,19 @@ nav #contact-btn:active {
   }
 }
 @media (max-height: 480px) {
-  .projects-container {
-    width: 100%;
-    flex-wrap: wrap;
+  html,
+body {
+    width: auto;
+    overflow-x: hidden;
   }
 
   nav {
     display: none;
+  }
+
+  .projects-container {
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .banner-parallax,
@@ -460,11 +466,7 @@ nav #contact-btn:active {
   }
 
   .parallax-title {
-    top: 30%;
-  }
-
-  .section {
-    box-shadow: none;
+    top: 25%;
   }
 
   .contact-parallax {

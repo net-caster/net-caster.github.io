@@ -421,12 +421,17 @@ nav {
 }
 
 @media (max-height: 480px) {
-    .projects-container {
-        width: 100%;
-        flex-wrap: wrap;
+    html,
+    body {
+        width: auto;
+        overflow-x: hidden;
     }
     nav {
         display: none;
+    }
+    .projects-container {
+        width: 100%;
+        flex-wrap: wrap;
     }
     .banner-parallax,
     .skills-parallax,
@@ -441,10 +446,8 @@ nav {
     }
     .name-tag {
         font-size: 2.5em;
-        // text-align: center;
         top: 1em;
         & .name {
-            // width: 70%;
             left: 5%;
         }
     }
@@ -457,12 +460,12 @@ nav {
         }
     }
     .parallax-title {
-        top: 30%;
+        top: 25%;
     }
-    .section {
-        box-shadow: none;
-        // width: 20%;
-    }
+    // .section {
+    //     box-shadow: none;
+    //     // width: 20%;
+    // }
     .contact-parallax {
         min-height: 50%;
     }

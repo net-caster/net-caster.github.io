@@ -459,12 +459,16 @@ nav #contact-btn:active {
     right: 10%;
   }
 
+  .section {
+    box-shadow: 0 10px 10px 0 #000;
+  }
+
   .contact-parallax {
     min-height: 50%;
   }
 
   .contact-section {
-    font-size: 1em;
+    font-size: 1.5em;
     top: 4em;
   }
   .contact-section .contact-title {

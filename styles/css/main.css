@@ -348,7 +348,7 @@ nav #contact-btn:active {
   }
   .name-tag .name {
     width: 70%;
-    left: 20%;
+    left: 10%;
   }
 
   .banner-title {
@@ -356,7 +356,7 @@ nav #contact-btn:active {
   }
   .banner-title .tag {
     text-align: center;
-    right: 20%;
+    right: 10%;
   }
 
   .projects-container {
@@ -409,10 +409,10 @@ nav #contact-btn:active {
   }
 
   .contact-section {
-    font-size: 1em;
+    font-size: 1.4em;
   }
   .contact-section .contact-title {
-    left: 15%;
+    left: 10%;
     width: 70%;
   }
 

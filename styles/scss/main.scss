@@ -350,14 +350,14 @@ nav {
         text-align: center;
         & .name {
             width: 70%;
-            left: 20%;
+            left: 10%;
         }
     }
     .banner-title {
         font-size: 2em;
         & .tag {
             text-align: center;
-            right: 20%;
+            right: 10%;
         }
     }
     .projects-container {
@@ -408,9 +408,9 @@ nav {
         z-index: -1;
     }
     .contact-section {
-        font-size: 1em;
+        font-size: 1.4em;
         & .contact-title {
-            left: 15%;
+            left: 10%;
             width: 70%;
         }
     }

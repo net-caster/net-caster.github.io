@@ -443,15 +443,15 @@ nav #contact-btn:active {
 
   .name-tag {
     font-size: 2.5em;
-    text-align: center;
+    top: 1em;
   }
   .name-tag .name {
-    width: 70%;
     left: 5%;
   }
 
   .banner-title {
     font-size: 2em;
+    top: 8em;
   }
   .banner-title .tag {
     text-align: center;

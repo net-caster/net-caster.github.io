@@ -95,22 +95,22 @@ nav #contact-btn:active {
 }
 
 .banner-parallax {
-  background-image: url("../../images/banner.jpeg");
+  background-image: url("/images/banner.jpeg");
   min-height: 100%;
 }
 
 .skills-parallax {
-  background-image: url("../../images/skills.png");
+  background-image: url("/images/skills.png");
   min-height: 60%;
 }
 
 .projects-parallax {
-  background-image: url("../../images/projects.jpeg");
+  background-image: url("/images/projects.jpeg");
   min-height: 60%;
 }
 
 .contact-parallax {
-  background-image: url("../../images/footer.jpg");
+  background-image: url("/images/footer.jpg");
   min-height: 40%;
 }
 
@@ -232,10 +232,10 @@ nav #contact-btn:active {
   transition: all 0.3s;
 }
 .projects-container .thumbnail-container .img#weather-banner {
-  background-image: url("../../images/project_thumbs/weather_banner.jpg");
+  background-image: url("/images/project_thumbs/weather_banner.jpg");
 }
 .projects-container .thumbnail-container .img#validation-banner {
-  background-image: url("../../images/project_thumbs/validation_banner.jpg");
+  background-image: url("/images/project_thumbs/validation_banner.jpg");
 }
 .projects-container .thumbnail-container .project-title {
   position: relative;

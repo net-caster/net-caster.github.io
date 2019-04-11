@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <section class="section" id="about">
+        <section class="section section__about" id="about">
             <h2 class="heading">About Me</h2>
 
             <div class="text">
@@ -54,22 +54,22 @@
             </div>
         </div>
 
-        <section class="section">
+        <section class="section section__skills">
 
             <div class="text">
-                <ul>
+                <ul class="row-one">
                     <li>HTML5</li>
                     <li>CSS3/SCSS</li>
-                    <li>JavaScript</li>
-                    <li>Git</li>
-                    <li>Photoshop</li>
-                </ul>
-                <span class="skills-p">Currently learning</span>
-                <ul>
+                    <li>JavaScript/ES6+</li>
+                    <li>Git/Version Control</li>
                     <li>Node.JS</li>
+                    <li>ExpressJS</li>
                     <li>MongoDB(+Mongoose)</li>
-                    <li>Express</li>
+                    <li>JSON Web Token</li>
+                    <li>REST API building and consumption</li>
+                    <li>Linux</li>
                 </ul>
+                <!-- <span class="skills-p">Currently learning</span> -->
                 <span class="skills-description">For more information on what skills I’ve gained, please visit the GitHub project pages.</span>
             </div>
         </section>
@@ -80,11 +80,22 @@
             <div class="parallax-title">Projects</div>
         </div>
 
-        <section class="section">
-
+        <section class="section section__projects">
             <div class="projects-container">
+                    <div class="thumbnail-container">
+                            <div class="img jimmys-banner"></div>
+                            <span class="project-title">Jimmy's Garage</span>
+                            <div class="project-btn">
+                                <a href="https://rest-api-devproject.herokuapp.com/" target="_blank"><span>View Project</span></a>
+                            </div>
+        
+                            <div class="github-btn">
+                                <a href="https://github.com/net-caster/restful-api-devproject" target="_blank"><span class="git"><img src="images/git_logo_dark.png" />Git<span class="hub">Hub</span></span></a>
+                            </div>
+                        </div>
+
                 <div class="thumbnail-container">
-                    <div class="img" id="weather-banner"></div>
+                    <div class="img weather-banner"></div>
                     <span class="project-title">Weather App</span>
                     <div class="project-btn">
                         <a href="https://net-caster.github.io/weather-forecast/" target="_blank"><span>View Project</span></a>
@@ -96,7 +107,7 @@
                 </div>
 
                 <div class="thumbnail-container">
-                    <div class="img" id="validation-banner"></div>
+                    <div class="img validation-banner"></div>
                     <span class="project-title">Input Validation</span>
                     <div class="project-btn">
                         <a href="https://net-caster.github.io/validation/" target="_blank"><span>View Project</span></a>

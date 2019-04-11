@@ -15,6 +15,11 @@ html {
   font-family: "Noto Sans", sans-serif;
   color: #e4f7ff;
   letter-spacing: 0.1em;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none;
 }
 
 nav {
@@ -76,10 +81,6 @@ nav #contact-btn:active {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overflow-y: scroll;
-}
-.container::-webkit-scrollbar {
-  display: none;
 }
 
 .banner-parallax,
@@ -90,7 +91,7 @@ nav #contact-btn:active {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   z-index: -1;
 }
 

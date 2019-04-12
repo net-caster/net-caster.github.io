@@ -5,6 +5,10 @@
 /*
 --------------- Layout ---------------
 */
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   width: 100%;
@@ -169,6 +173,7 @@ nav #contact-btn:active {
   border-bottom: 1px solid cornsilk;
   box-shadow: 0 5px 10px 5px #000;
   z-index: 1;
+  width: 100%;
 }
 .section ul {
   display: block;
@@ -236,7 +241,7 @@ nav #contact-btn:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 600px;
+  width: 100%;
   height: 175px;
   transition: all 0.3s;
 }
@@ -366,31 +371,55 @@ nav #contact-btn:active {
   }
   .banner-title .tag {
     text-align: center;
-    right: 10%;
+    right: unset;
+    width: 100%;
+  }
+
+  .section {
+    padding: 5%;
+  }
+
+  .section ul {
+    display: inline;
+    padding: 0;
+  }
+
+  .section__projects {
+    padding: 20px 0;
   }
 
   .projects-container {
-    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .projects-container .thumbnail-container {
-    width: 400px;
-    height: 100%;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 90%;
+    text-align: center;
+    align-items: center;
   }
   .projects-container .thumbnail-container .img {
     top: -1.75em;
-    width: 400px;
+    width: 100%;
   }
   .projects-container .thumbnail-container:hover {
     transform: none;
   }
+  .projects-container .thumbnail-container .btn {
+    position: relative;
+    top: -10%;
+    padding: 10px 0;
+    float: unset;
+  }
   .projects-container .thumbnail-container .github-btn {
-    right: 1em;
-    top: -1em;
+    right: unset;
     opacity: 1;
   }
   .projects-container .thumbnail-container .project-btn {
-    left: 1em;
-    top: 1em;
+    left: unset;
   }
   .projects-container .thumbnail-container .project-btn a {
     background-color: #222;
@@ -399,38 +428,34 @@ nav #contact-btn:active {
   .projects-container .thumbnail-container .project-title {
     text-align: center;
     top: -3em;
-    left: -4.5em;
+    left: unset;
   }
 
-  .section {
-    padding: 10px 15% 30px 15%;
+  .parallax-title {
+    font-size: 3rem;
   }
 
   .banner-parallax,
 .skills-parallax,
 .projects-parallax,
 .contact-parallax {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     background-attachment: scroll;
-    z-index: -1;
   }
 
   .contact-section {
-    font-size: 1.4em;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
   }
   .contact-section .contact-title {
-    left: 10%;
-    width: 70%;
+    left: unset;
   }
 
   .footer .credits {
     display: none;
   }
 }
-@media (max-height: 480px) {
+@media (max-height: 414px) {
   html,
 body {
     width: auto;
@@ -445,24 +470,31 @@ body {
     flex-wrap: wrap;
   }
   .projects-container .thumbnail-container {
-    width: 500px;
-    height: 250px;
+    width: 100%;
+    min-height: 100%;
   }
   .projects-container .thumbnail-container .img {
-    top: -0.8em;
-    width: 500px;
+    width: 100%;
   }
   .projects-container .thumbnail-container:hover {
     transform: none;
   }
+  .projects-container .thumbnail-container .btn {
+    display: inline;
+    position: relative;
+  }
   .projects-container .thumbnail-container .github-btn {
-    right: 1em;
-    top: 0.75em;
+    right: 5%;
+    width: unset;
+    top: 2em;
+    float: right;
     opacity: 1;
   }
   .projects-container .thumbnail-container .project-btn {
-    left: 1em;
-    top: 1.5em;
+    left: 5%;
+    width: unset;
+    float: left;
+    top: 4em;
   }
   .projects-container .thumbnail-container .project-btn a {
     background-color: #222;
@@ -470,21 +502,16 @@ body {
   }
   .projects-container .thumbnail-container .project-title {
     text-align: center;
-    top: -1.5em;
-    left: -1em;
+    left: unset;
+    right: 0;
+    width: unset;
   }
 
   .banner-parallax,
 .skills-parallax,
 .projects-parallax,
 .contact-parallax {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     background-attachment: scroll;
-    z-index: -1;
-    width: 100%;
   }
 
   .name-tag {
@@ -523,6 +550,56 @@ body {
   .contact-section .contact-title {
     left: 10%;
     width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .banner-parallax,
+.skills-parallax,
+.projects-parallax,
+.contact-parallax {
+    background-attachment: scroll;
+  }
+
+  .name-tag {
+    top: 15%;
+  }
+  .name-tag .name {
+    width: 50%;
+    left: 10%;
+  }
+
+  .banner-title {
+    font-size: 2em;
+    top: 65%;
+  }
+  .banner-title .tag {
+    right: 5%;
+    width: 100%;
+  }
+
+  .section {
+    padding: 5%;
+  }
+
+  .section ul {
+    display: inline;
+    padding: 0;
+  }
+
+  .projects-container .thumbnail-container .github-btn {
+    opacity: 1;
+  }
+  .projects-container .thumbnail-container:hover {
+    transform: none;
+  }
+
+  .contact-section {
+    font-size: 3rem;
+    top: 30%;
+  }
+  .contact-section .contact-title {
+    text-align: center;
+    width: 100%;
   }
 }
 

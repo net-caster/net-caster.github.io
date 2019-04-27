@@ -230,7 +230,8 @@ nav #contact-btn:active {
   border: 1px solid cornsilk;
   color: #222;
   text-align: center;
-  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
 }
 .projects-container .thumbnail-container:hover {
   transform: scale(1.05);
@@ -273,7 +274,7 @@ nav #contact-btn:active {
   color: #222;
   padding: 8px 15px;
   border-radius: 20px;
-  border: 1.5px solid #222;
+  border: 2px solid #222;
 }
 .projects-container .thumbnail-container .project-btn a:hover {
   background-color: #222;

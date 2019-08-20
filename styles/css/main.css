@@ -18,7 +18,7 @@ html {
   font-size: 16px;
   font-family: "Noto Sans", sans-serif;
   color: #e4f7ff;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05rem;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
@@ -255,10 +255,12 @@ nav #contact-btn:active {
 .projects-container .thumbnail-container .img.jimmys-banner {
   background-image: url("../../images/project_thumbs/jimmys_banner.jpg");
 }
+.projects-container .thumbnail-container .img.ems-banner {
+  background-image: url("../../images/project_thumbs/ems_banner.jpg");
+}
 .projects-container .thumbnail-container .project-title {
   position: relative;
   top: 10px;
-  text-transform: uppercase;
   font-weight: 600;
 }
 .projects-container .thumbnail-container .project-btn {

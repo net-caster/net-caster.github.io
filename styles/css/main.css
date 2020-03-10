@@ -6,7 +6,8 @@
 --------------- Layout ---------------
 */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body,
@@ -22,6 +23,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+
 body::-webkit-scrollbar,
 html::-webkit-scrollbar {
   display: none;
@@ -34,6 +36,7 @@ nav {
   z-index: 1;
   text-align: right;
 }
+
 nav span {
   display: inline-block;
   color: cornsilk;
@@ -42,26 +45,33 @@ nav span {
   font-size: 1.2em;
   background: rgba(0, 0, 0, 0.85);
   border-radius: 20px;
-  box-shadow: 0 2px 2px black;
+  -webkit-box-shadow: 0 2px 2px black;
+          box-shadow: 0 2px 2px black;
   direction: rtl;
 }
+
 nav span a {
   padding: 0 15px;
   text-decoration: none;
   color: cornsilk;
 }
+
 nav span a:hover {
   color: #e4f7ff;
 }
+
 nav #home-btn {
   position: relative;
   margin: 10px 25px;
   float: left;
 }
+
 nav #home-btn:active {
   top: 4px;
-  box-shadow: 0 0 2px 1px black;
+  -webkit-box-shadow: 0 0 2px 1px black;
+          box-shadow: 0 0 2px 1px black;
 }
+
 nav #about-btn,
 nav #skills-btn,
 nav #projects-btn,
@@ -71,12 +81,14 @@ nav #contact-btn {
   top: 10px;
   right: 1em;
 }
+
 nav #about-btn:active,
 nav #skills-btn:active,
 nav #projects-btn:active,
 nav #contact-btn:active {
   top: 15px;
-  box-shadow: 0 0 2px 1px black;
+  -webkit-box-shadow: 0 0 2px 1px black;
+          box-shadow: 0 0 2px 1px black;
 }
 
 .container {
@@ -132,6 +144,7 @@ nav #contact-btn:active {
   text-shadow: 0 5px 5px #000;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 .name-tag .name {
   position: relative;
   left: 1em;
@@ -149,6 +162,7 @@ nav #contact-btn:active {
   width: 100%;
   text-align: right;
 }
+
 .banner-title .tag {
   display: inline-block;
   position: relative;
@@ -171,10 +185,12 @@ nav #contact-btn:active {
   background: #222222;
   border-top: 1px solid cornsilk;
   border-bottom: 1px solid cornsilk;
-  box-shadow: 0 5px 10px 5px #000;
+  -webkit-box-shadow: 0 5px 10px 5px #000;
+          box-shadow: 0 5px 10px 5px #000;
   z-index: 1;
   width: 100%;
 }
+
 .section ul {
   display: block;
   position: relative;
@@ -183,11 +199,13 @@ nav #contact-btn:active {
   letter-spacing: 0.2em;
   left: 0;
 }
+
 .section .skills-p {
   text-transform: uppercase;
   border-bottom: 1px solid #ffe7d0;
   color: #ffe7d0;
 }
+
 .section .skills-description {
   color: #ffe7d0;
 }
@@ -212,31 +230,43 @@ nav #contact-btn:active {
 }
 
 .projects-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100%;
   z-index: 1;
   padding: 20px 0;
 }
+
 .projects-container .thumbnail-container {
   margin: 20px 60px;
   height: 300px;
   width: 600px;
   background-color: #ffe7d0;
-  box-shadow: 0 5px 5px #000;
+  -webkit-box-shadow: 0 5px 5px #000;
+          box-shadow: 0 5px 5px #000;
   border-radius: 2px;
   border: 1px solid cornsilk;
   color: #222;
   text-align: center;
-  transition: transform 0.5s;
-  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
 }
+
 .projects-container .thumbnail-container:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
 }
+
 .projects-container .thumbnail-container .img {
   position: relative;
   background-position: center;
@@ -244,31 +274,39 @@ nav #contact-btn:active {
   background-size: 100%;
   width: 100%;
   height: 175px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .projects-container .thumbnail-container .img.weather-banner {
   background-image: url("../../images/project_thumbs/weather_banner.jpg");
 }
+
 .projects-container .thumbnail-container .img.validation-banner {
   background-image: url("../../images/project_thumbs/validation_banner.jpg");
 }
+
 .projects-container .thumbnail-container .img.jimmys-banner {
   background-image: url("../../images/project_thumbs/jimmys_banner.jpg");
 }
+
 .projects-container .thumbnail-container .img.ems-banner {
   background-image: url("../../images/project_thumbs/ems_banner.jpg");
 }
+
 .projects-container .thumbnail-container .project-title {
   position: relative;
   top: 10px;
   font-weight: 600;
 }
+
 .projects-container .thumbnail-container .project-btn {
   position: relative;
   top: 4em;
   float: left;
   left: 10%;
 }
+
 .projects-container .thumbnail-container .project-btn a {
   text-transform: uppercase;
   text-decoration: none;
@@ -278,10 +316,12 @@ nav #contact-btn:active {
   border-radius: 20px;
   border: 2px solid #222;
 }
+
 .projects-container .thumbnail-container .project-btn a:hover {
   background-color: #222;
   color: cornsilk;
 }
+
 .projects-container .thumbnail-container .github-btn {
   position: relative;
   float: right;
@@ -290,23 +330,28 @@ nav #contact-btn:active {
   font-size: 1.5em;
   opacity: 0.5;
 }
+
 .projects-container .thumbnail-container .github-btn a {
   text-decoration: none;
   color: #222;
 }
+
 .projects-container .thumbnail-container .github-btn img {
   width: 26px;
   height: 26px;
   margin: 5px 5px;
-  transform: translateY(30%);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
   opacity: 0.75;
 }
+
 .projects-container .thumbnail-container .github-btn .hub {
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.75);
   padding: 0 5px;
   color: #ffe7d0;
 }
+
 .projects-container .thumbnail-container .github-btn:hover {
   opacity: 1;
 }
@@ -325,9 +370,11 @@ nav #contact-btn:active {
   text-shadow: 0 5px 5px #000;
   background: rgba(0, 0, 0, 0.8);
 }
+
 .contact-section .contact-title {
   position: relative;
 }
+
 .contact-section span {
   color: #e4f7ff;
   text-transform: lowercase;
@@ -339,10 +386,12 @@ nav #contact-btn:active {
   height: 30px;
   background: #161616;
 }
+
 .footer .copy {
   font-size: 0.75em;
   margin-left: 10px;
 }
+
 .footer .credits {
   position: relative;
   font-size: 0.75em;
@@ -350,6 +399,7 @@ nav #contact-btn:active {
   float: right;
   right: 1%;
 }
+
 .footer .credits a {
   text-transform: uppercase;
   color: cornsilk;
@@ -359,7 +409,6 @@ nav #contact-btn:active {
   nav {
     display: none;
   }
-
   .name-tag {
     font-size: 2.5em;
     text-align: center;
@@ -368,7 +417,6 @@ nav #contact-btn:active {
     width: 70%;
     left: 10%;
   }
-
   .banner-title {
     font-size: 2em;
   }
@@ -377,39 +425,48 @@ nav #contact-btn:active {
     right: unset;
     width: 100%;
   }
-
   .section {
     padding: 5%;
   }
-
   .section ul {
     display: inline;
     padding: 0;
   }
-
   .section__projects {
     padding: 20px 0;
   }
-
   .projects-container {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .projects-container .thumbnail-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 20px 0;
     width: 90%;
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .projects-container .thumbnail-container .img {
     top: -1.75em;
     width: 100%;
   }
   .projects-container .thumbnail-container:hover {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
   .projects-container .thumbnail-container .btn {
     position: relative;
@@ -433,18 +490,15 @@ nav #contact-btn:active {
     top: -3em;
     left: unset;
   }
-
   .parallax-title {
     font-size: 3rem;
   }
-
   .banner-parallax,
-.skills-parallax,
-.projects-parallax,
-.contact-parallax {
+  .skills-parallax,
+  .projects-parallax,
+  .contact-parallax {
     background-attachment: scroll;
   }
-
   .contact-section {
     font-size: 1.3rem;
     text-align: center;
@@ -453,24 +507,23 @@ nav #contact-btn:active {
   .contact-section .contact-title {
     left: unset;
   }
-
   .footer .credits {
     display: none;
   }
 }
+
 @media (max-height: 414px) {
   html,
-body {
+  body {
     width: auto;
     overflow-x: hidden;
   }
-
   nav {
     display: none;
   }
-
   .projects-container {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .projects-container .thumbnail-container {
     width: 100%;
@@ -480,7 +533,8 @@ body {
     width: 100%;
   }
   .projects-container .thumbnail-container:hover {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
   .projects-container .thumbnail-container .btn {
     display: inline;
@@ -509,14 +563,12 @@ body {
     right: 0;
     width: unset;
   }
-
   .banner-parallax,
-.skills-parallax,
-.projects-parallax,
-.contact-parallax {
+  .skills-parallax,
+  .projects-parallax,
+  .contact-parallax {
     background-attachment: scroll;
   }
-
   .name-tag {
     font-size: 2.5em;
     top: 1em;
@@ -524,7 +576,6 @@ body {
   .name-tag .name {
     left: 5%;
   }
-
   .banner-title {
     font-size: 2em;
     top: 8em;
@@ -533,19 +584,15 @@ body {
     text-align: center;
     right: 10%;
   }
-
   .parallax-title {
     top: 25%;
   }
-
   .section {
     overflow-x: hidden;
   }
-
   .contact-parallax {
     min-height: 50%;
   }
-
   .contact-section {
     font-size: 1.5em;
     top: 2em;
@@ -555,14 +602,14 @@ body {
     width: 80%;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .banner-parallax,
-.skills-parallax,
-.projects-parallax,
-.contact-parallax {
+  .skills-parallax,
+  .projects-parallax,
+  .contact-parallax {
     background-attachment: scroll;
   }
-
   .name-tag {
     top: 15%;
   }
@@ -570,7 +617,6 @@ body {
     width: 50%;
     left: 10%;
   }
-
   .banner-title {
     font-size: 2em;
     top: 65%;
@@ -579,23 +625,20 @@ body {
     right: 5%;
     width: 100%;
   }
-
   .section {
     padding: 5%;
   }
-
   .section ul {
     display: inline;
     padding: 0;
   }
-
   .projects-container .thumbnail-container .github-btn {
     opacity: 1;
   }
   .projects-container .thumbnail-container:hover {
-    transform: none;
+    -webkit-transform: none;
+            transform: none;
   }
-
   .contact-section {
     font-size: 3rem;
     top: 30%;
@@ -605,11 +648,11 @@ body {
     width: 100%;
   }
 }
+
 .tech {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
   font-style: italic;
 }
-
 /*# sourceMappingURL=main.css.map */
